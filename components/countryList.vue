@@ -12,6 +12,7 @@
     </div>
     </template>
     <script lang="ts" setup>
+    
     const countries = ref([
         {   
             id:'1',
