@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     head: {
-      title: 'सिफारिश प्रमाणीकरण पोर्टल',
+      title: 'Data Collection Prototype',
     }
   },
 
