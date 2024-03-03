@@ -157,13 +157,14 @@
     </div>
 
     <!-- answer -->
-    <div class="text-center mt-4">
-    </div>
+    <div class="text-center mt-4"></div>
     <div class="flex flex-wrap place-items-center">
       <!-- card -->
       <div
         class="shadow-lg rounded-xl w-72 md:w-96 p-4 bg-white relative overflow-hidden"
-     v-for="(ans,i) in renderAns" :key="i" >
+        v-for="(ans, i) in renderAns"
+        :key="i"
+      >
         <a href="#" class="w-full h-full block">
           <div class="flex items-center border-b-2 mb-2 py-2">
             <img
@@ -247,8 +248,7 @@ const gifs = ref([
   },
   {
     id: 5,
-    iframe:
-      "https://giphy.com/gifs/flower-happy-birthday-hb-rkoli75BEjGXr7ck4o",
+    iframe:"https://giphy.com/embed/IWLlhhzn1qtONzaC3x",
   },
   {
     id: 6,
@@ -314,25 +314,22 @@ const submitAns = () => {
     } else {
       gifDescription.value = "";
       renderGif.value++;
+      let nation = countries.value.filter((el) => {
+        return el.id == nationId.value;
+      });
+
+      let gif = gifs.value.filter((el) => {
+        return el.id == description.value.gifId;
+      });
+
+      renderAns.value.push({
+        country: nation,
+        gif: gif,
+        ans: description.value.ans,
+      });
     }
   }
-
-  let nation = countries.value.filter((el) => {
-    return el.id == nationId.value;
-  });
-
-  let gif = gifs.value.filter((el) => {
-    return el.id == description.value.gifId;
-  });
-
-  renderAns.value.push({
-    country: nation,
-    gif: gif,
-    ans: description.value.ans,
-  });
-
-
-  console.log("tst", renderAns.value)
+  console.log("tst", renderAns.value);
 };
 </script>
 
