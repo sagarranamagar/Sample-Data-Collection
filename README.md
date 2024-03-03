@@ -39,6 +39,11 @@ npm run build
 Locally preview production build:
 
 
+```bash
+npm run preview
+
+
+
 
 
 
@@ -49,8 +54,6 @@ Users are encouraged to express their thoughts and interpretations of the animat
 
 This Nuxt.js project not only showcases the versatility of web development but also celebrates the cultural diversity of the Southeast Asian region. Through this engaging and interactive experience, users can connect, share, and appreciate the wealth of linguistic and cultural nuances that make each SEA nation distinctive.
 
-```bash
-npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
