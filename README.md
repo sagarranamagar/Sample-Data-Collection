@@ -72,6 +72,19 @@ project Structure:
 |-- package.json
 |-- README.md
 
+
+Below is a guide for user interaction
+
+1. Landing Page:
+Upon entering the website, users will be greeted with an aesthetically pleasing landing page displaying tiles representing Southeast Asian (SEA) nations. Each tile includes the nation's name or flag, inviting users to make a selection.
+
+2. Nation Selection:
+Users click on a tile to choose a SEA nation that piques their interest.
+After selection, a smooth transition navigates them to a new page where a dynamically rendered GIF related to the chosen nation awaits.
+
+3. Descriptive Interaction:
+Users are prompted to describe the content of the GIF in their own words.
+A user-friendly form or input field accepts responses, encouraging participants to express themselves freely.
  
 ```
 
